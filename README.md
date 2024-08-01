@@ -23,22 +23,14 @@ Ensure your OpenWrt router has:
 
 ### Installation
 
-1. **Clone the Repository:**
+   **Download the Script:**
 
-   SSH into your OpenWrt router and clone the repository:
-
-   ```bash
-   git clone https://github.com/ElysianWhirl/openwrt-auto-metric-interface.git /root/openwrt-auto-metric-interface
-   cd /root/openwrt-auto-metric-interface
-   ```
-
-2. **Copy Script to Appropriate Location:**
-
-   Move the script to the `/usr/bin/` directory or another directory included in your system's PATH for easier access:
+   SSH into your OpenWrt router and use `wget` to download the script:
 
    ```bash
-   cp auto_metric.sh /usr/bin/auto_metric.sh
+   wget -O /usr/bin/auto_metric.sh https://raw.githubusercontent.com/ElysianWhirl/openwrt-auto-metric-interface/main/auto_metric.sh
    chmod +x /usr/bin/auto_metric.sh
+
    ```
 
 ### Configuration
@@ -118,8 +110,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ### Penjelasan Tambahan
 
-- **Prasyarat:** Bagian ini menjelaskan apa saja yang perlu disiapkan sebelum menggunakan script, seperti utilitas yang harus tersedia.
-- **Instalasi dan Konfigurasi:** Instruksi untuk menginstal dan mengonfigurasi script agar sesuai dengan kebutuhan spesifik.
-- **Menjalankan pada Startup:** Langkah-langkah untuk memastikan script berjalan otomatis saat router dihidupkan.
+1. **Menggunakan `wget`:** Instruksi ini menggantikan langkah clone repository dengan mengunduh langsung file `auto_metric.sh` menggunakan `wget` dari repository GitHub.
+2. **Pengaturan Awal dan Perubahan Konfigurasi:** Pengguna diinstruksikan untuk menyesuaikan pengaturan di dalam script sesuai kebutuhan jaringan mereka.
+3. **Enabling on Startup:** Instruksi tentang cara membuat script berjalan otomatis saat startup menggunakan mekanisme init script OpenWrt.
 
-Dengan mengikuti instruksi dalam README ini, script Anda akan terintegrasi dengan baik ke dalam sistem OpenWrt dan akan aktif setiap kali router di-restart.
+Dengan mengikuti langkah-langkah di atas, Anda akan berhasil mengunduh dan mengonfigurasi script untuk digunakan pada perangkat OpenWrt Anda.
