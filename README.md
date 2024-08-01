@@ -45,7 +45,7 @@ Ensure your OpenWrt router has:
 
 The script, `auto_metric.sh`, includes several variables that can be customized to match your network setup:
 
-- **HOST:** The IP or domain name to ping for connectivity checks (default: `104.18.214.235`).
+- **HOST:** The IP or domain name to ping for connectivity checks (default: `google.com`).
 - **INTERVAL:** The time interval (in seconds) between ping checks (default: `3` seconds).
 - **INTERFACES:** A list of network interfaces to monitor, e.g., `usb0 usb1 eth1`.
 - **DEFAULT_METRICS:** The default routing metrics for each interface.
