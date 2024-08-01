@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Host yang akan diping
-HOST="your_host"
+HOST="google.com"
 
 # Interval waktu untuk melakukan ping (dalam detik)
 INTERVAL=3
