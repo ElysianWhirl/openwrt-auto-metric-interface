@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Host yang akan diping
-HOST="104.18.214.235"
+HOST="your_host_for_ping"
 
 # Interval waktu untuk melakukan ping (dalam detik)
 INTERVAL=1
